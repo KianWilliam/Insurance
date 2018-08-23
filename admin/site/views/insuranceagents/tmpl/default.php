@@ -30,8 +30,6 @@
    $jinput = JFactory::getApplication()->input;
    $page	= $jinput->get('limitstart', 0);  
    $data = $jinput->post->getArray();
-   $user = JFactory::getUser();  
-   $userid =$user->id;
    $userid = $data['jform']['userid'];
    $table = $data['jform']['formid'];
    $document=JFactory::getDocument();
@@ -41,14 +39,14 @@
    $db = JFactory::getDbo();
    if($data['jform']['formid']!==null)
    {
-     if($userid!==0)
+     if(!empty($userid))
      {
 	 
 		     $query = $db->getQuery(true);
 			 $query->delete($db->quoteName('#__'.$table))->where($db->quoteName('userid').'='.$db->quote($userid));
 			 $db->setQuery($query);
 			 $db->execute();
-	   //}
+	   
      }
     $query = $db->getQuery(true);
 
