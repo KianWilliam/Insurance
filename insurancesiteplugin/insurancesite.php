@@ -500,7 +500,7 @@ class PlgContentInsurancesite extends JPlugin
 											$required='';
 											$star='';
 										}
-											  $textarea ="<div class='form-group' style='display:".$lasts[1].";margin-left:".$lasts[2]."px;margin-top:".$lasts[3]."px;'><label style='width:".$lasts[4]."%' for='".$formelementarray[1]."'>".$star."".$formelementarray[5]."</label><textarea  autocomplete='adieux' class='form-control' name='jform[".$formelementarray[1]."]'  id='".$formelementarray[1]."'  style='margin-left:".$lasts[5]."px;margin-top:".$lasts[6]."px;width:".$formelementarray[3]."px;height:".$formelementarray[4]."px;' ".$required." ></textarea></div>";
+											  $textarea ="<div class='form-group' style='display:".$lasts[1].";margin-left:".$lasts[2]."px;margin-top:".$lasts[3]."px;'><label style='width:".$lasts[4]."%' for='".$formelementarray[1]."'>".$star."".$formelementarray[5]."(do not type comma in textarea)</label><textarea  autocomplete='adieux' class='form-control' name='jform[".$formelementarray[1]."]'  id='".$formelementarray[1]."'  style='margin-left:".$lasts[5]."px;margin-top:".$lasts[6]."px;width:".$formelementarray[3]."px;height:".$formelementarray[4]."px;' ".$required." ></textarea></div>";
 									          $formbody .=$textarea;
 								           }
 									       else
@@ -903,7 +903,7 @@ class PlgContentInsurancesite extends JPlugin
 											$required='';
 											$star='';
 										}
-											  $textarea ="<div class='form-group' style='display:".$lasts[1].";margin-left:".$lasts[2]."px;margin-top:".$lasts[3]."px;'><label style='width:".$lasts[4]."%' for='".$formelementarray[1]."'>".$star."".$formelementarray[5]."</label><textarea  autocomplete='adieux' class='form-control' name='jform[".$formelementarray[1]."]'  id='".$formelementarray[1]."'  style='margin-left:".$lasts[5]."px;margin-top:".$lasts[6]."px;width:".$formelementarray[3]."px;height:".$formelementarray[4]."px;' ".$required." ></textarea></div>";
+											  $textarea ="<div class='form-group' style='display:".$lasts[1].";margin-left:".$lasts[2]."px;margin-top:".$lasts[3]."px;'><label style='width:".$lasts[4]."%' for='".$formelementarray[1]."'>".$star."".$formelementarray[5]."(do not type comma in textarea)</label><textarea  autocomplete='adieux' class='form-control' name='jform[".$formelementarray[1]."]'  id='".$formelementarray[1]."'  style='margin-left:".$lasts[5]."px;margin-top:".$lasts[6]."px;width:".$formelementarray[3]."px;height:".$formelementarray[4]."px;' ".$required." ></textarea></div>";
 									          $formbody .=$textarea;
 								           }
 									       else
