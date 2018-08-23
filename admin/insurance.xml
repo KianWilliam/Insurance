@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="3.x" method="upgrade">
+    <identifier>com:insurance</identifier>
+    <name>Insurance</name>
+    <creationDate>Oct 2017</creationDate>
+    <author>Kian William Nowrouzian</author>
+	<copyright>Copyright (C) 2005 - 2017  All rights reserved. </copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>mezmer121@gmail.com</authorEmail>
+	<authorUrl>http://www.extensions.lord121.ir</authorUrl>
+    <version>1.0.0</version>	
+	<description><![CDATA[<div style="color:#fff; background-color:#f015d9; padding:5px;">Welcome to Insurance extension!</div>]]></description>
+	
+	<install>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/install.sql</file>
+        </sql>
+    </install>
+	
+	<uninstall>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+	
+	<update>
+	     <schemas type="mysql">
+		      <schemapath>sql/mysql/updates</schemapath>
+	      </schemas>
+	</update>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_insurance.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_insurance.sys.ini</language>
+	</languages>
+	<media destination="com_insurance" folder="media">
+		<filename>index.html</filename>
+		<filename>icon-24-insurance.ico</filename>
+		<folder>cache</folder>		
+	</media>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>insurance.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>helpers</folder>
+	</files>
+	<administration>
+	
+		 <!--  <menu img="media/com_insurance/icon-24-insurance.ico" link="option=com_insurance">COM_INSURANCE</menu> -->
+		 
+		 	<menu>Insurance</menu>
+	       <submenu>
+		<!--
+			Note that all & must be escaped to &amp; for the file to be valid
+			XML and be parsed by the installer
+		-->
+		<menu link="option=com_insurance&amp;view=insuranceforms">COM_INSURANCE_FORMS</menu>
+		<menu link="option=com_insurance&amp;view=insuranceclients">COM_INSURANCE_CLIENTS</menu>
+		<menu link="option=com_insurance&amp;view=insuranceagents">COM_INSURANCE_AGENTS</menu>
+
+	</submenu>
+		   
+		   <files folder="admin">
+		    <filename>insurance.xml</filename>
+        	<filename>insurance.php</filename>
+            <filename>controller.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+            <folder>models</folder>
+			<folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+          </files>
+		  
+		  <languages>
+		   <language tag="en-GB">language/en-GB/en-GB.com_insurance.ini</language>
+		    <language tag="en-GB">language/en-GB/en-GB.com_insurance.sys.ini</language>
+	    </languages>
+
+	
+	</administration>
+	
+</extension>

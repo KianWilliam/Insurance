@@ -1,0 +1,148 @@
+@media only screen and (max-width:900px)
+{
+	.insuranceform
+	{
+		width:93% !important;
+	}
+		.insuranceform .form-group
+		{
+			display:block !important;
+			width:100% !important;
+			margin-left:0px !important;
+			margin-top:0px !important;
+			
+		}
+	
+		.insuranceform select, 
+		.insuranceform input[type='text'], 
+		.insuranceform input[type='email'], 
+		.insuranceform input[type='password'], 
+		.insuranceform input[type='number'], 
+		.insuranceform input[type='date'], 
+		.insuranceform input[type='url'], 
+		.insuranceform textarea, 
+		.insuranceform input[type='range']
+		{
+			display:inline-block !important;
+			margin-left:0px !important;
+			margin-top:0px !important;
+			
+		}
+				.insuranceform input[type='radio'], 
+				.insuranceform input[type='checkbox']
+				{
+				}
+
+				.insuranceform .clearbreak label
+				{
+					float:none !important;
+					width:25% !important;
+				}
+				.insuranceform .form-group label
+				{
+					display:inline-block !important;
+					width:45% !important;
+				}
+				.insuranceform .vh
+				{
+					height:0px !important;
+				}
+
+}
+@media only screen and (max-width:800px)
+{
+}
+@media only screen and (max-width:768px)
+{
+}
+@media only screen and (max-width:691px)
+{
+}
+@media only screen and (max-width:648px)
+{
+}
+@media only screen and (max-width:640px)
+{
+}
+@media only screen and (max-width:600px)
+{
+}
+@media only screen and (max-width:598px)
+{
+}
+@media only screen and (max-width:570px)
+{
+}
+@media only screen and (max-width:505px)
+{
+}
+@media only screen and (max-width:496px)
+{
+}
+@media only screen and (max-width:480px)
+{
+	
+}
+@media only screen and (max-width:406px)
+{
+	           .insuranceform .clearbreak label
+				{
+					width:90% !important;
+				}
+				.insuranceform .form-group label
+				{
+					width:90% !important;
+				}
+}
+@media only screen and (max-width:360px)
+{
+	.insuranceform div.tab .myprogress
+	{
+		margin-left:1px !important;
+	}
+	
+}
+@media only screen and (max-width:356px)
+{
+}
+@media only screen and (max-width:346px)
+{
+}
+@media only screen and (max-width:345px)
+{
+}
+@media only screen and (max-width:342px)
+{
+}
+@media only screen and (max-width:320px)
+{
+}
+@media only screen and (max-width:311px)
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

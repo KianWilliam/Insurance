@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+    <layout title="COM_INSURANCE_INSURANCEFORM_VIEW_DEFAULT_TITLE" option="COM_INSURANCE_INSURANCEFORM_VIEW_DEFAULT_OPTION">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_INSURANCE_INSURANCEFORM"
+		/>
+		<message>
+			<![CDATA[COM_INSURANCE_INSURANCEFORM_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" label="COM_INSURANCE_BASIC_OPTION_FIELDSET_LABEL">
+			<field type="sql" name="title" label="COM_INSURANCE_QUERY_LABEL" description="COM_INSURANCE_QUERY_DSC"   key_field="id" value_field="title" query="SELECT id , title FROM #__insurance" required="true" ></field>
+		</fieldset>
+	</fields>
+	
+</metadata>

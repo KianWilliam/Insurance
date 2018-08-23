@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="package" version="3.x" method="upgrade">
+ <identifier>pkg:insurance</identifier>
+ <name>Insurance Package</name>
+ <author>Kian William Nowrouzian</author>
+ <creationDate>April 2017</creationDate>
+ <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+ <packagename>insurance</packagename>
+ <version>1.0.0</version>
+ <url>http://www.extensions.lord121.ir</url>
+ <packager>Kian William Nowrouzian</packager>
+ <packagerurl>http://www.extensions.lord121.ir</packagerurl>
+ <description><![CDATA[<div style="color:#fff; background-color:#f015d9; padding:5px;">The complete package of insurance including the component extension and four plugins which are supposed to be enabled, Enjoy!</div> ]]></description>
+ <update>http://www.extensions.lord121.ir</update>
+ <scriptfile>install.script.php</scriptfile>
+ <files>
+   <file type="component" id="com_insurance" >admin.zip</file>
+   <file type="plugin" client="administrator" group="extension">insuranceplugin.zip</file>
+   <file type="plugin" client="administrator" group="content">insurancedeleteplugin.zip</file>
+   <file type="plugin" client="administrator" group="user">deleteuserplugin.zip</file>
+   <file type="plugin" client="site" group="content">insurancesiteplugin.zip</file>
+   <file type="plugin" client="site" group="binddata">readdataplugin.zip</file>
+ </files>
+<updateservers>
+		<server type="collection" name="pkg_insurance"><![CDATA[http://www.extensions.lord121.ir/myextensions.xml]]></server>
+</updateservers>
+ </extension>

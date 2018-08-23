@@ -1,0 +1,39 @@
+
+/*
+* @package component borggique for Joomla! 3.x
+ * @version $Id: com_borggique 1.0.0 2017-4-10 23:26:33Z $
+ * @author Kian William Nowrouzian
+ * @copyright (C) 2016- Kian William Nowrouzian
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ 
+ This file is part of borggique.
+    borggique is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    borggique is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with borggique.  If not, see <http://www.gnu.org/licenses/>.
+ 
+*/
+
+
+
+
+
+.myslidehandle{font-weight:bold;}
+.myslidenumber{color:#e71e9e;}
+.del{margin-left:5px;}
+.myslidedelete{font-weight:bold;cursor:hand;cursor:pointer;background-color:#e3e3e3;}
+.sliderow{ width:400px}
+.imgthumb {float:left;border:1px solid #e71e9e;margin-top:2px;}
+.imgthumb img {margin-left:auto; margin-right:auto;margin-top:0;margin-bottom:0; width:50px; height:50px;}
+.myslideimgname{float:left;font-weight:bold; margin-left:2px;margin-top:2px;}
+.sliderow a:visited, .sliderow a:link{float:left;color:#e71e9e;font-weight:bold; margin-left:2px}
+.sliderow a:hover{color:blue}
+.explanation{color:#e71e9e;margin-left:6px;padding-top:5px;}
+.myslidetext{margin-left:0;}
+#myaddslide{font-weight:bold;cursor:hand;cursor:pointer;background-color:#e3e3e3;}

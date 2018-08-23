@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form addfieldpath="/administrator/components/com_insurance/models/fields">
+    <fieldset name="general">
+		<field name="title"
+               type="text"
+               label="JGLOBAL_TITLE"
+               description="COM_INSURANCE_TITLE_DESC"
+               class="inputbox"
+               size="30"
+               required="true"
+        />
+		<field name="alias"
+               type="text"
+               label="JFIELD_ALIAS_LABEL"
+               description="JFIELD_ALIAS_DESC"
+               class="inputbox"
+               size="30"
+        />
+		<field id="published"
+               name="published"
+               type="list"
+               label="JGLOBAL_STATE"
+               description="JFIELD_PUBLISHED_DESC"
+               class="inputbox"
+               size="1"
+               default="1"
+        >
+            <option value="1">
+                JPUBLISHED</option>
+            <option value="0">
+                JUNPUBLISHED</option>			
+        </field>
+		<field name="id"
+               type="text"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC"
+               size="10"
+               default="0"
+               readonly="true"
+               class="readonly"
+        />
+		<field name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+    </fieldset>
+		<fields name="params" >	
+			<fieldset name="general_settings">
+				<field type="list" name="jqlib" label="COM_INSURANCE_LOAD_LABEL" description="COM_INSURANCE_LOAD_DESC" default="0">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="list" name="recaptcha" label="COM_INSURANCE_RECAPTCHA_LABEL" description="COM_INSURANCE_RECAPTCHA_DESC" default="true" filter="raw">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="recaptcha_key" type="text" label="COM_INSURANCE_FORM_RECAPTCHA_KEY_LABEL" description="COM_INSURANCE_FORM_RECAPTCHA_KEY_DESC" filter="raw"   />
+
+				<field name="form_url" type="url" label="COM_INSURANCE_FORM_URL_LABEL" description="COM_INSURANCE_FORM_URL_DESC" size="10" default="index.php?option=com_insurance&amp;view=insuranceagents"   />
+
+				<field name="form_logo" type="media" label="COM_INSURANCE_FORM_LOGO_LABEL" description="COM_INSURANCE_FORM_LOGO_DESC"   />
+				<field name="form_logo_width" type="text" label="COM_INSURANCE_FORM_LOGO_WIDTH_LABEL" description="COM_INSURANCE_FORM_LOGO_WIDTH_DESC" filter="integer"   />
+				<field name="form_logo_height" type="text" label="COM_INSURANCE_FORM_LOGO_HEIGHT_LABEL" description="COM_INSURANCE_FORM_LOGO_HEIGHT_DESC" filter="integer"   />
+
+
+				<field name="form_width" type="text" label="COM_INSURANCE_FORM_WIDTH_LABEL" description="COM_INSURANCE_FORM_WIDTH_DESC"  filter="float" />
+				<field name="form_backcolor" type="mycolor" label="COM_INSURANCE_FORM_BACKCOLOR_LABEL" description="COM_INSURANCE_FORM_BACKCOLOR_DESC" default="transparent" filter="raw" />
+				<field name="form_fontsize" type="text" label="COM_INSURANCE_FORM_FONTSIZE_LABEL" description="COM_INSURANCE_FORM_FONTSIZE_DESC"  filter="float" />
+				<field name="form_fontfamily" type="text" label="COM_INSURANCE_FORM_FONTFAMILY_LABEL" description="COM_INSURANCE_FORM_FONTFAMILY_DESC" default="arial" filter="raw" />
+				<field name="form_fontstyle" type="text" label="COM_INSURANCE_FORM_FONTSTYLE_LABEL" description="COM_INSURANCE_FORM_FONTSTYLE_DESC" default="italic" filter="raw" />
+				<field name="form_fontweight" type="text" label="COM_INSURANCE_FORM_FONTWEIGHT_LABEL" description="COM_INSURANCE_FORM_FONTWEIGHT_DESC" default="bold" filter="raw" />
+                <field name="form_progressbar" type="list" label="COM_INSURANCE_PROGRESSBAR_LABEL" description="COM_INSURANCE_PROGRESSBAR_DESC" default="1" >
+					<option value="0">No</option>
+				    <option value="1">Yes</option>
+				</field>
+				<field name="general_elementcolor" type="mycolor" label="COM_INSURANCE_FORM_ELEMENT_COLOR_LABEL" description="COM_INSURANCE_FORM_ELEMENT_COLOR_DESC" default="#7ab7f5" filter="raw" />
+
+				<field name="tab_width" type="text" label="COM_INSURANCE_TAB_WIDTH_LABEL" description="COM_INSURANCE_TAB_WIDTH_DESC" default="100" filter="float" />
+				<field name="tab_align" type="text" label="COM_INSURANCE_TAB_ALIGN_LABEL" description="COM_INSURANCE_TAB_ALIGN_DESC" default="left" filter="raw" />
+				<field name="tab_marginleft" type="text" label="COM_INSURANCE_TAB_MARGINLEFT_LABEL" description="COM_INSURANCE_TAB_MARGINLEFT_DESC"  default="0" filter="integer" />
+				<field name="tab_marginright" type="text" label="COM_INSURANCE_TAB_MARGINRIGHT_LABEL" description="COM_INSURANCE_TAB_MARGINRIGHT_DESC"  default="0" filter="integer" />
+				<field name="progressbar_width" type="text" label="COM_INSURANCE_PROGRESSBAR_WIDTH_LABEL" description="COM_INSURANCE_PROGRESSBAR_WIDTH_DESC" default="100" filter="integer" />
+				<field name="progressbar_backcolor" type="mycolor" label="COM_INSURANCE_PROGRESSBAR_BACKCOLOR_LABEL" description="COM_INSURANCE_PROGRESSBAR_BACKCOLOR_DESC" default="transparent" filter="raw" />
+				<field name="progressbar_textcolor" type="mycolor" label="COM_INSURANCE_PROGRESSBAR_TEXTCOLOR_LABEL" description="COM_INSURANCE_PROGRESSBAR_TEXTCOLOR_DESC" default="transparent" filter="raw" />
+				<field name="progressbar_margin" type="text" label="COM_INSURANCE_PROGRESSBAR_MARGIN_LABEL" description="COM_INSURANCE_PROGRESSBAR_MARGIN_DESC" default="0" filter="integer" />
+				<field name="input_backcolor" type="mycolor" label="COM_INSURANCE_INPUT_BACKCOLOR_LABEL" description="COM_INSURANCE_INPUT_BACKCOLOR_DESC" default="transparent" filter="raw" />
+				<field name="input_border" type="text" label="COM_INSURANCE_INPUT_BORDER_LABEL" description="COM_INSURANCE_INPUT_BORDER_DESC" default="1" filter="integer" />
+                <field name="input_bordercolor" type="mycolor" label="COM_INSURANCE_INPUT_BORDERCOLOR_LABEL" description="COM_INSURANCE_INPUT_BORDERCOLOR_DESC" default="transparent" filter="raw" />
+				<field name="label_backcolor" type="mycolor" label="COM_INSURANCE_LABEL_BACKCOLOR_LABEL" description="COM_INSURANCE_LABEL_BACKCOLOR_DESC" default="transparent" filter="raw" />
+				<field name="label_color" type="mycolor" label="COM_INSURANCE_LABEL_COLOR_LABEL" description="COM_INSURANCE_LABEL_COLOR_DESC" default="transparent" filter="raw" />
+				<field name="label_border" type="text" label="COM_INSURANCE_LABEL_BORDER_LABEL" description="COM_INSURANCE_LABEL_BORDER_DESC" default="1" filter="integer" />
+                <field name="label_bordercolor" type="mycolor" label="COM_INSURANCE_LABEL_BORDERCOLOR_LABEL" description="COM_INSURANCE_LABEL_BORDERCOLOR_DESC" default="transparent" filter="raw" />
+				<field name="label_textalign" type="list" label="COM_INSURANCE_LABEL_TEXTALIGN_LABEL" description="COM_INSURANCE_LABEL_TEXTALIGN_DESC" default="0" >
+					<option value="left">left</option>
+				    <option value="right">right</option>
+					<option value="center">center</option>
+					<option value="center">justify</option>
+				</field>
+				<field name="label_width" type="text" label="COM_INSURANCE_LABEL_WIDTH_LABEL" description="COM_INSURANCE_LABEL_WIDTH_DESC"  filter="float" />
+
+				<field name="placeholder_color" type="mycolor" label="COM_INSURANCE_PLACEHOLDER_COLOR_LABEL" description="COM_INSURANCE_PLACEHOLDER_COLOR_DESC" default="#E3E3E3" filter="raw" />
+				<field name="buttonsholder_align" type="list" label="COM_INSURANCE_BUTTONHOLDER_ALIGN_LABEL" description="COM_INSURANCE_BUTTONHOLDER_ALIGN_DESC" default="0" >
+					<option value="left">left</option>
+				    <option value="right">right</option>
+					<option value="none">none</option>
+				</field>
+				<field name="buttonholder_width" type="text" label="COM_INSURANCE_BUTTONHOLDER_WIDTH_LABEL" description="COM_INSURANCE_BUTTONHOLDER_WIDTH_DESC"  filter="float" />
+				<field name="button_color" type="mycolor" label="COM_INSURANCE_BUTTON_COLOR_LABEL" description="COM_INSURANCE_BUTTON_COLOR_DESC" default="#fff" filter="raw" />
+				<field name="button_backcolor" type="mycolor" label="COM_INSURANCE_BUTTON_BACKCOLOR_LABEL" description="COM_INSURANCE_BUTTON_BACKCOLOR_DESC" default="#7ab7f5" filter="raw" />
+			    <field name="inputfile_color" type="mycolor" label="COM_INSURANCE_INPUTFILE_COLOR_LABEL" description="COM_INSURANCE_INPUTFILE_COLOR_DESC" default="#000" filter="raw" />
+				 <field name="inputfile_display" type="list" label="COM_INSURANCE_INPUTFILE_DISPLAY_LABEL" description="COM_INSURANCE_INPUTFILE_DISPLAY_DESC" default="inline-block" >
+					<option value="none">No</option>
+				    <option value="inline-block">Yes</option>
+				</field>
+				</fieldset>
+			<fieldset name="main_settings">
+			    <field name="sample" type="sample" label="COM_INSURANCE_EXPLAIN_LABEL" description=""  />
+		        <field name="form_elements" type="textarea" label="COM_INSURANCE_TEXTAREA_FORMELEMENTS_LABEL" description="COM_INSURANCE_TEXTAREA_FORMELEMENTS_DESC" rows="15" cols="15" filter="raw"  />
+	        </fieldset>
+		</fields>
+
+
+</form>

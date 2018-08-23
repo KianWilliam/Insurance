@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+    <layout title="COM_INSURANCE_INSURANCEAGENTS_VIEW_DEFAULT_TITLE" option="COM_INSURANCE_INSURANCEAGENTS_VIEW_DEFAULT_OPTION">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_INSURANCE_INSURANCEAGENT"
+		/>
+		<message>
+			<![CDATA[COM_INSURANCE_INSURANCEAGENT_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" label="COM_INSURANCE_BASIC_OPTION_FIELDSET_LABEL">
+		</fieldset>
+	</fields>
+	
+</metadata>
